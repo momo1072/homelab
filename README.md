@@ -1,2 +1,45 @@
-# homelab
-Raspberry Pi 400 Homelab — Pi-hole DNS, Grafana/Prometheus Monitoring, Docker
+# 🏠 Homelab — Raspberry Pi 400
+
+Praktisches Homelab auf einem Raspberry Pi 400 — aufgebaut während meiner FISI-Ausbildung bei GFN GmbH Hamburg.
+
+## 🛠️ Was läuft hier
+
+| Service | Tool | Zweck |
+|---|---|---|
+| DNS / Ad-Blocker | Pi-hole | Werbung & Tracking für alle Geräte blockieren |
+| Monitoring | Prometheus + Grafana | CPU, RAM, Netzwerk überwachen |
+| Container | Docker | Services isoliert betreiben |
+
+## 📊 Architektur
+
+Heimnetzwerk (Speedport Smart 4)
+├── Raspberry Pi 400 (192.168.2.186)
+│   ├── Pi-hole — DNS für alle Geräte
+│   ├── Prometheus — Metriken sammeln
+│   ├── Grafana — Dashboard & Visualisierung
+│   └── Node Exporter — System-Metriken
+├── Laptop (AKPRIVAT)
+├── iPhone / iPad
+└── Smart-TV / Amazon Echo
+
+## 🚀 Was ich dabei gelernt habe
+
+- Netzwerk-Scanning mit **Nmap**
+- DNS-Funktionsweise und Pi-hole-Konfiguration
+- Docker & Docker Compose
+- Prometheus + Grafana Monitoring-Stack
+- SSH-Zugriff auf Linux-Server
+- Ethical Hacking Grundlagen (TryHackMe)
+
+## 📈 Status
+
+- ✅ Pi-hole aktiv — 84.231 Domains geblockt
+- ✅ Grafana Dashboard live
+- ✅ Prometheus Metriken aktiv
+- 🔄 TryHackMe Lernpfad in Bearbeitung
+
+## 🔧 Hardware
+
+- Raspberry Pi 400 (4GB RAM)
+- 16GB MicroSD
+- LAN-Kabel direkt am Router

@@ -30,15 +30,17 @@ Gelernt während der FISI-Ausbildung — direkt auf dem Raspberry Pi 400 geübt.
 | `chmod` | Berechtigungen ändern | `chmod 644 datei.txt` |
 | `chown` | Besitzer ändern | `chown homeles82 datei.txt` |
 
+
+
 ### Berechtigungen verstehen
 
+|     |      |
+|----|--------|
+|  d- | Datei, Ordner |
+| rw- | Besitzer (rw=lesen+schreiben) |
+| r-- | Andere (r=lesen) |
+| r-- | Gruppe (r=lesen) |
 
--rw-r--r--
-│ │   │   │
-│ │   │   └── Andere (r=lesen)
-│ │   └────── Gruppe (r=lesen)
-│ └────────── Besitzer (rw=lesen+schreiben)
-└──────────── -=Datei, d=Ordner
 
 
 

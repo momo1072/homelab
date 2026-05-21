@@ -10,17 +10,18 @@ Praktisches Homelab auf einem Raspberry Pi 400 — aufgebaut während meiner FIS
 | Monitoring | Prometheus + Grafana | CPU, RAM, Netzwerk überwachen |
 | Container | Docker | Services isoliert betreiben |
 
-## 📊 Architektur
 
-Heimnetzwerk (Speedport Smart 4)
-├── Raspberry Pi 400 (192.168.2.186)
-│   ├── Pi-hole — DNS für alle Geräte
-│   ├── Prometheus — Metriken sammeln
-│   ├── Grafana — Dashboard & Visualisierung
-│   └── Node Exporter — System-Metriken
-├── Laptop (AKPRIVAT)
-├── iPhone / iPad
-└── Smart-TV / Amazon Echo
+## 🗺️ Architektur
+
+**Netzwerk:** Speedport Smart 4 (192.168.2.1)
+
+| Gerät | IP | Rolle |
+|---|---|---|
+| Raspberry Pi 400 | 192.168.2.186 | Server — Pi-hole, Grafana, Docker |
+| Laptop (AKPRIVAT) | 192.168.2.128 | Entwicklung & Verwaltung |
+| iPhone / iPad | 192.168.2.x | Pi-hole DNS Client |
+| Smart-TV / Echo | 192.168.2.x | Pi-hole DNS Client |
+
 
 ## 🚀 Was ich dabei gelernt habe
 
